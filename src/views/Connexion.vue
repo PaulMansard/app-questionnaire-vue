@@ -1,6 +1,6 @@
 <template>
   <div class="connexion">
-    <Connexion msg="Welcome to Your Vue.js Appaaaezz"/>
+    <Connexion msg="Welcome to Your Vue.js Appaaqaqqaezz"/>
   </div>
 </template>
 
