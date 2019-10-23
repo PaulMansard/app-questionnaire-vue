@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Connexion from '../views/Connexion.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'connexion',
+    component: Connexion
+  },
+  {
+    path: '/home',
     name: 'home',
     component: Home
   },
