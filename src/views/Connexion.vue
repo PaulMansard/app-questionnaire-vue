@@ -1,6 +1,6 @@
 <template>
   <div class="connexion">
-    <Connexion msg="Welcome to Your Vue.js Appaaqaqqaezz"/>
+    <Connexion msg="Welcomze to Your Vue.js Appaaqaqqaezz"/>
     <b-form @submit="onSubmit">
       <b-form-group label-cols-sm="2" label-cols-lg="2" label-for="input-horizontal" id="groupNom" label="Nom : ">
         <b-form-input class="w-75" id="input-horizontal" placeholder="Entrez votre nom" type="text" v-model="nom"></b-form-input>
