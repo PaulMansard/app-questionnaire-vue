@@ -26,6 +26,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
-Objectif 
+Objectif du jour : 
 
-Mise en place du formulaires
+- List des questions
