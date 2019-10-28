@@ -33,7 +33,7 @@ export default {
     onSubmit () {
       this.$emit('login', this.form)
       this.$router.push({ name: 'questionnaire', params: { form: this.form } })
-    },
+    }
   }
 }
 </script>
