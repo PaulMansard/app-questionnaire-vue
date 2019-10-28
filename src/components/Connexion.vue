@@ -32,6 +32,7 @@ export default {
   methods: {
     onSubmit () {
       this.$emit('login', this.form)
+      localStorage.user = JSON.stringify(this.form)
       this.$router.push({ name: 'questionnaire', params: { form: this.form } })
     }
   }

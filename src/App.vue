@@ -2,8 +2,13 @@
   <div id="app">
       <b-navbar type="dark" variant="dark">
         <b-navbar-nav>
-          <b-nav-item href="/">Home</b-nav-item>
-          <b-nav-text v-if='user != null' class="user">{{ user.prenom }}{{ user.nom }}</b-nav-text>
+          <b-nav-item href="/">App Questionnaire</b-nav-item>
+          <b-nav-item-dropdown right v-if="user != null">
+            <template v-slot:button-content>
+              {{ user.nom }} {{ user.prenom }}
+            </template>
+            <b-dropdown-item @click="removeUser()" href="/">Deconnexion</b-dropdown-item>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-navbar>
     <router-view @login='login'/>
@@ -15,12 +20,15 @@
 export default {
   data: function () {
     return {
-      user: null
+      user: JSON.parse(localStorage.getItem('user'))
     }
   },
   methods: {
     login (form) {
       this.user = form
+    },
+    removeUser () {
+      localStorage.removeItem('user')
     }
   }
 }

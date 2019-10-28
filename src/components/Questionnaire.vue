@@ -18,6 +18,9 @@
       <p>
         Score total: {{ score() }} / {{ questions.nbQuestion }}
       </p>
+      <p>
+        {{ userResponses }}
+      </p>
     </div>
   </div>
 </template>
