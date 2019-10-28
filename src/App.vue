@@ -35,10 +35,6 @@ export default {
   color: #2c3e50;
 }
 
-.nav-text user{
-  display: block;
-}
-
 #nav {
   padding: 30px;
 
