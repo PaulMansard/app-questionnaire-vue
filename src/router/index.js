@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Connexion from '../views/Connexion.vue'
+import Questionnaire from '../views/Questionnaire.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +13,16 @@ const routes = [
     component: Connexion
   },
   {
+    path: '/questionnaire',
+    name: 'questionnaire',
+    component: Questionnaire,
+    props: true
+  },
+  {
     path: '/home',
     name: 'home',
-    component: Home
+    component: Home,
+    props: true
   },
   {
     path: '/about',

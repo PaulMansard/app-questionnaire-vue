@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :form = 'form'/>
   </div>
 </template>
 
@@ -12,6 +12,9 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  props: {
+    form: null
   }
 }
 </script>

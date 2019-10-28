@@ -1,12 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+      <b-navbar type="dark" variant="dark">
+        <b-navbar-nav>
+          <b-nav-item href="/">Home</b-nav-item>
+          <b-nav-text v-if='user != null' class="user">{{ user.prenom }}{{ user.nom }}</b-nav-text>
+        </b-navbar-nav>
+      </b-navbar>
+    <router-view @login='login'/>
+
   </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      user: null
+    }
+  },
+  methods: {
+    login (form) {
+      this.user = form
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
