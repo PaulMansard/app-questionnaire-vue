@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!--Mise en place du formulaire de connexion -->
     <h3>Connexion</h3>
     <b-form @submit.prevent="onSubmit()">
       <b-form-group label-cols-sm="2" label-cols-lg="2" label-for="input-horizontal" id="groupNom" label="Nom : ">
@@ -30,6 +31,7 @@ export default {
     }
   },
   methods: {
+    // Envoie de user dans le localstorage ainsi que de la redirection vers la page de questionnaire
     onSubmit () {
       this.$emit('login', this.form)
       localStorage.user = JSON.stringify(this.form)

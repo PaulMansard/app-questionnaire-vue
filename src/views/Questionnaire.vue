@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Questionnaire :form='form'/>
+    <Questionnaire />
   </div>
 </template>
 
@@ -10,9 +10,6 @@ export default {
   name: 'questionnaire',
   components: {
     Questionnaire
-  },
-  props: {
-    form: null
   }
 }
 </script>

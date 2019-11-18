@@ -1,59 +1,43 @@
 {
   "nbQuestion": 5,
   "questions": [{
-                "title": "Question 1",
+                "title": "Est ce qu'il fait beau ?",
                 "responses": [
-                  { "text": "Mauvaise reponse" },
-                  { "text": "Bonne reponse", "correct": true }
+                  { "text": "Non" },
+                  { "text": "Oui", "correct": true }
                 ]
               },{
-                "title": "Question 2",
+                "title": "Est ce que tu aimes les chats ?",
                 "responses": [
-                  { "text": "Mauvaise reponse" },
-                  { "text": "Bonne reponse", "correct": true }
+                  { "text": "Non" },
+                  { "text": "Oui", "correct": true },
+                  { "text": "Peut-etre" }
                 ]
               },
                 {
-                  "title": "Question 3",
+                  "title": "Est ce que tu aimes les chiens ?",
                   "responses": [
-                    { "text": "Mauvaise reponse" },
-                    { "text": "Bonne reponse", "correct": true }
+                    { "text": "Non" },
+                    { "text": "Oui", "correct": true },
+                    { "text": "Peut-etre" }
                   ]
                 },
                 {
-                  "title": "Question 4",
+                  "title": "Est ce que tu aimes les vaches ?",
                   "responses": [
-                    { "text": "Mauvaise reponse" },
-                    { "text": "Bonne reponse", "correct": true }
+                    { "text": "Non" },
+                    { "text": "Oui", "correct": true },
+                    { "text": "Peut-etre" }
                   ]
                 },
                 {
-                  "title": "Question 5",
+                  "title": "Est ce que tu aimes les moutons ?",
                   "responses": [
-                    { "text": "Mauvaise reponse" },
-                    { "text": "Bonne reponse", "correct": true }
+                    { "text": "Non" },
+                    { "text": "Oui", "correct": true },
+                    { "text": "Peut-etre" }
                   ]
-                },
-                {
-                  "title": "Question 6",
-                  "responses": [
-                    { "text": "Mauvaise reponse" },
-                    { "text": "Bonne reponse", "correct": true }
-                  ]
-                },
-                {
-                  "title": "Question 7",
-                  "responses": [
-                    { "text": "Mauvaise reponse" },
-                    { "text": "Bonne reponse", "correct": true }
-                  ]
-                },
-                {
-                  "title": "Question 8",
-                  "responses": [
-                    { "text": "Mauvaise reponse" },
-                    { "text": "Bonne reponse", "correct": true }
-                  ]
-                }]
+                }
+              ]
 }
 
