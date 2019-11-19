@@ -23,7 +23,7 @@ export default {
     }
   },
   methods: {
-    // Création du form a envoyer dans la page de connexion
+    // Envoie de la form au parent
     login (form) {
       this.$emit('login', form)
     }
