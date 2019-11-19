@@ -1,13 +1,23 @@
 # app-questionnaire-vue
-Mise en place : 
 
-- Affichage de la connexion
-- Affichage des questions
-- Mise en place d'un accueil avec la liste des scores du joueur qui est connecter
 
-Objectif du jour : 
+Première séance :
+- Affichage de connexion
 
-- Ajout des questions aleatoire et administrateur
+
+Deuxième séances :
+- Mise en place du fichier JSON
+- Affichage des questions avec les réponses
+
+
+Troisième séances : 
+- Mise en place du système du calcul du score
+- Et correction affichage question
+- Enregistrement et affichage des différents score de l'utilisateur
+
+
+Quatrième séance :
+- Mise en place du système de question aléatoire
 
 
 
