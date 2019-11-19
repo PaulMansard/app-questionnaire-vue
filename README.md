@@ -3,7 +3,7 @@ Mise en place :
 
 - Affichage de la connexion
 - Affichage des questions
-- Mise en place d'un accueil avec la list des scores
+- Mise en place d'un accueil avec la liste des scores du joueur qui est connecter
 
 Objectif du jour : 
 
