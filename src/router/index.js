@@ -5,7 +5,7 @@ import Questionnaire from '../views/Questionnaire.vue'
 import Accueil from '../views/Accueil.vue'
 
 Vue.use(VueRouter)
-//Mise en place des différente route de l'application
+// Mise en place des différente route de l'application
 const routes = [
   {
     path: '/',
