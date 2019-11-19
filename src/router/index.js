@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import Connexion from '../views/Connexion.vue'
 import Questionnaire from '../views/Questionnaire.vue'
 import Accueil from '../views/Accueil.vue'
@@ -23,13 +22,10 @@ const routes = [
     path: '/accueil',
     name: 'accueil',
     component: Accueil,
-    props: true
-  },
-  {
-    path: '/home',
-    name: 'home',
-    component: Home,
-    props: true
+    props: true,
+    meta: {
+      title: 'Home Page - Example App'
+    }
   },
   {
     path: '/about',

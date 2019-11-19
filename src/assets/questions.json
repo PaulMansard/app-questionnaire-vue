@@ -37,6 +37,22 @@
                     { "text": "Oui", "correct": true },
                     { "text": "Peut-etre" }
                   ]
+                },
+                {
+                  "title": "Est ce que tu aimes les souris ?",
+                  "responses": [
+                    { "text": "Non" },
+                    { "text": "Oui", "correct": true },
+                    { "text": "Peut-etre" }
+                  ]
+                },
+                {
+                  "title": "Est ce que tu aimes les chameaux ?",
+                  "responses": [
+                    { "text": "Non" },
+                    { "text": "Oui", "correct": true },
+                    { "text": "Peut-etre" }
+                  ]
                 }
               ]
 }
