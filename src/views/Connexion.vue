@@ -26,11 +26,6 @@ export default {
     // Création du form a envoyer dans la page de connexion
     login (form) {
       this.$emit('login', form)
-    },
-    // Envoie du form login et le redirection
-    onSubmit () {
-      this.$emit('login', this.login)
-      this.$router.push({ name: 'questionnaire', params: { form: this.form } })
     }
   }
 }
