@@ -1,11 +1,12 @@
 <template>
   <div>
-    <!--Affichage de chacun des questions-->
-    <div :key='index' v-for="index in questions.nbQuestion">
-      <div v-show="index-1 === questionIndex">
-        <h2>{{ questionsAffichage[index-1].title }}</h2>
+    <!--Affichage de chacune des questions à l'aide de questionAffichage qui est généré dans le mounted-->
+    <div :key='index' v-for="(question, index) in questionsAffichage">
+      <div v-show="index === questionIndex">
+        <h2>{{ question.title }}</h2>
         <b-form-radio-group>
-          <b-form-radio :key="response.text" v-bind:value="response.correct" v-model="userResponses[index-1]" v-for="response in questionsAffichage[index-1].responses">{{response.text}}</b-form-radio>
+          <!--Affichage de chacune des reponses de la question en appliquant la reponse correct dans la radio-->
+          <b-form-radio :key="response.text" v-bind:value="response.correct" v-model="userResponses[index]" v-for="response in question.responses">{{response.text}}</b-form-radio>
         </b-form-radio-group>
         <button v-on:click="suivant">
           Suivant
@@ -34,14 +35,15 @@ export default {
     return {
       questions: Question,
       questionIndex: 0,
-      userResponses: Array(Question.questions.length).fill(false),
+      // Mise en place du tableau de reponse a false pour chacune des question puis modification lors d'un clique sur une bonne reponse
+      userResponses: Array(Question.nbQuestion).fill(false),
       score: [],
       user: [],
       questionsAffichage: []
     }
   },
   methods: {
-    // Permet de passer à la question suivante et d'ajouter le score dans local storage
+    // Permet de passer à la question suivante et d'ajouter le score dans local storage lorsque que le nombre de question depasse le nombre de question à afficher
     suivant: function () {
       this.questionIndex++
       if (this.questionIndex === this.questions.nbQuestion) {
@@ -49,7 +51,7 @@ export default {
         localStorage.setItem('score', JSON.stringify(this.score))
       }
     },
-    // Permet de recuperer le score à afficher
+    // Permet de recuperer le score à afficher en calculant le nombre de reponse true dans le tableau
     scorefind: function () {
       return this.userResponses.filter(function (val) { return val }).length
     }
@@ -63,6 +65,7 @@ export default {
     if (localStorage.getItem('user')) {
       this.user = JSON.parse(localStorage.getItem('user'))
     }
+    // Permet de renvoyer les questions aléatoirement sur le nouveau tableau questionsAffichage qui sert d'affichage
     for (var i = 0; i < this.questions.nbQuestion; i++) {
       var nbAleatoire = Math.floor(Math.random() * Math.floor(this.questions.questions.length))
       if (this.questionsAffichage.indexOf(this.questions.questions[nbAleatoire]) === -1) {

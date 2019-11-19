@@ -27,6 +27,7 @@ export default {
     }
   },
   methods: {
+    // recuperation du login de la connexion
     login (form) {
       this.user = form
     },

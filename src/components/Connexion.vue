@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    // Envoie de user dans le localstorage ainsi que de la redirection vers la page de questionnaire
+    // Set login pour envoie dans app.vue, Envoie de user dans le localstorage ainsi que de la redirection vers la page de questionnaire
     onSubmit () {
       this.$emit('login', this.form)
       localStorage.user = JSON.stringify(this.form)
