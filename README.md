@@ -1,31 +1,14 @@
 # app-questionnaire-vue
+Mise en place : 
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-
+- Affichage de la connexion
+- Affichage des questions
+- Mise en place d'un accueil avec la liste des scores du joueur qui est connecter
 
 Objectif du jour : 
 
-- List des questions
+- Ajout des questions aleatoire et administrateur
+
+
+
+Lien vers le site : https://paulmansard.github.io/#/
