@@ -8,3 +8,7 @@ Mise en place :
 Objectif du jour : 
 
 - Ajout des questions aleatoire et administrateur
+
+
+
+Lien vers le site : https://paulmansard.github.io/#/
